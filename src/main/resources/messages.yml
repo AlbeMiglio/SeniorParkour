@@ -1,0 +1,17 @@
+invalid-syntax: "&cInvalid syntax, please retry!"
+
+not-enough-permissions: "&cYou don't have enough permissions for this!"
+
+parkour-ended: "&aParkour ended in %time!"
+
+new-record: "&aThat's a new record!"
+
+checkpoint-reached: "&eCheckpoint #%n reached!"
+
+cant-fly-during-parkour: "&cYou have been kicked from parkour because of flying!"
+
+correct-usage-create: "&cCorrect usage: /parkour create <parkourName>"
+
+parkour-already-exists: "&cA parkour with this name already exists!"
+
+parkour-created: "&aParkour successfully created!"

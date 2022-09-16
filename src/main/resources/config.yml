@@ -1,0 +1,76 @@
+# SeniorParkour - skill test
+
+database:
+  username: root
+  hostname: localhost
+  port: 3306
+  password: password
+  database: seniorparkour_db
+  ssl: false
+
+hologram-height: 2.0    # adding this Y value to player's location
+
+gui:
+  info:
+    title: "Parkour %parkour's info"
+    start-button:
+      material: STONE
+      name: "Parkour Start"
+      lore:
+        - "Click here to teleport!"
+    end-button:
+      material: STONE
+      name: "Parkour End"
+      lore:
+        - "Click here to teleport!"
+    checkpoint-button:
+      material: STONE
+      name: "Checkpoint #%n"
+      lore:
+        - "Click here to teleport!"
+  stats:
+    title: "%player's Stats"
+    parkour-info-button:
+      material: STONE
+      amount: 1
+      name: "STATS FOR %parkour"
+      lore:
+        - "Position: %position"
+        - "Time: %time"
+  top:
+    title: "%parkour - Leaderboard"
+    player-button:
+      name: "&e#%n %player"
+      lore:
+        - "Time: %time"
+
+scoreboard:
+  - "&c&lPARKOUR"
+  - "&cParkour&7: &f%parkour_name%"
+  - "&cElapsed Time&7: &a%parkour_time%"
+  - ""
+  - "&cCurrent position&7: &f#%parkour_position%"
+  - "&cBest Time&7: &f%parkour_position_time%"
+
+spawn: "world:1.0:60.0:1.0"
+
+start-hologram:
+  - "&7Parkour &c&l%name"
+  - ""
+  - "&bStart your parkour &lhere&b!"
+
+end-hologram:
+  - "&eParkour &lEND!"
+  - "&eHurry up &b%player&e, you did it!"
+
+checkpoint-hologram:
+  - "&bCheckpoint #%n"
+
+top-hologram:
+  - "&b&lPARKOUR &c&l%name &7 - &b&lTOP 5"
+  - "&c( #%position You: %time)"
+  - "&#d4af37#1 %1_name &7(&f%1_time&7)"
+  - "&#c0c0c0#2 %2_name &7(&f%2_time&7)"
+  - "&#cd7f32#3 %3_name &7(&f%3_time&7)"
+  - "&9#4 %4_name &7(&f%4_time&7)"
+  - "&9#5 %5_name &7(&f%5_time&7)"

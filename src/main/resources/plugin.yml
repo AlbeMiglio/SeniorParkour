@@ -1,0 +1,14 @@
+name: SeniorParkour
+version: '${project.version}'
+main: it.albemiglio.seniorparkour.SeniorParkour
+api-version: 1.16
+depend: [ PowerLib ]
+authors: [ AlbeMiglio ]
+website: github.com/AlbeMiglio/SeniorParkour
+description: 1.16.5 parkour plugin
+
+commands:
+  parkour:
+    description: parkour command
+    aliases:
+      - seniorparkour
