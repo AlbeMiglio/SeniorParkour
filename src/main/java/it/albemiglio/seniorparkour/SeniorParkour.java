@@ -14,7 +14,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public final class SeniorParkour extends JavaPlugin {
 
-
     @Getter
     private FileService fileService;
     @Getter

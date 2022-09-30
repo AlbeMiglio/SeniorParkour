@@ -1,4 +1,4 @@
-package it.albemiglio.seniorparkour.objects;
+package it.albemiglio.seniorparkour.services;
 
 public abstract class Service {
 

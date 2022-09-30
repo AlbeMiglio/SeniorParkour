@@ -2,13 +2,10 @@ package it.albemiglio.seniorparkour.services;
 
 import com.google.common.io.Files;
 import it.albemiglio.seniorparkour.SeniorParkour;
-import it.albemiglio.seniorparkour.objects.Service;
 import it.mycraft.powerlib.bukkit.config.ConfigManager;
-import lombok.Getter;
 import org.bukkit.configuration.file.FileConfiguration;
 
 import java.io.File;
-import java.util.List;
 
 public class FileService extends Service {
 

@@ -43,6 +43,18 @@ gui:
       name: "&e#%n %player"
       lore:
         - "Time: %time"
+    previous-page:
+      material: STONE
+      amount: 1
+      name: "&eGo to previous page!"
+      lore:
+        - "Current: (%page/%pages)"
+    next-page:
+      material: STONE
+      amount: 1
+      name: "&eGo to next page!"
+      lore:
+        - "Current: (%page/%pages)"
 
 scoreboard:
   - "&c&lPARKOUR"

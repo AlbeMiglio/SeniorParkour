@@ -1,4 +1,4 @@
-package it.albemiglio.seniorparkour.objects;
+package it.albemiglio.seniorparkour.commands.subcommands;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;

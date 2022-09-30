@@ -5,7 +5,7 @@ api-version: 1.16
 depend: [ PowerLib ]
 authors: [ AlbeMiglio ]
 website: github.com/AlbeMiglio/SeniorParkour
-description: 1.16.5 parkour plugin
+description: 1.16.5 parkour plugin. Meant only for skill test purposes! DO NOT USE ON PUBLIC SERVERS!
 
 commands:
   parkour:

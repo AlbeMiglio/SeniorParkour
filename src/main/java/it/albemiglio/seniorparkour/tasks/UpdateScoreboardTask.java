@@ -16,7 +16,7 @@ import java.util.List;
 
 public class UpdateScoreboardTask implements Runnable {
 
-    private SeniorParkour main;
+    private final SeniorParkour main;
 
     public UpdateScoreboardTask(SeniorParkour main) {
         this.main = main;

@@ -4,19 +4,19 @@ import com.github.stefvanschie.inventoryframework.gui.GuiItem;
 import com.github.stefvanschie.inventoryframework.gui.type.ChestGui;
 import com.github.stefvanschie.inventoryframework.pane.StaticPane;
 import it.albemiglio.seniorparkour.SeniorParkour;
-import it.albemiglio.seniorparkour.objects.GUI;
 import it.albemiglio.seniorparkour.utils.TimeUtils;
 import it.mycraft.powerlib.bukkit.item.ItemBuilder;
 import it.mycraft.powerlib.common.chat.Message;
+import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Player;
 
 public class StatsGUI extends GUI {
 
-    private Player player;
+    private OfflinePlayer player;
     private ChestGui gui;
-    private SeniorParkour main;
+    private final SeniorParkour main;
 
-    public StatsGUI(SeniorParkour main, Player player) {
+    public StatsGUI(SeniorParkour main, OfflinePlayer player) {
         this.main = main;
         this.player = player;
         this.loadGUI();
@@ -35,19 +35,17 @@ public class StatsGUI extends GUI {
                     .fromConfig(this.main.getConfig(), "gui.stats.parkour-info-button")
                     .addPlaceHolder("%position", this.main.getStatsService()
                             .getPositionOf(player.getUniqueId(), parkour))
+                    .addPlaceHolder("%player", player.getName())
                     .addPlaceHolder("%time", TimeUtils.formattedTime(this.main.getStatsService()
-                            .getStats().get(player.getUniqueId()).get(parkour))).build(), event ->
+                            .getStats().get(player.getUniqueId()).get(parkour))).hex().build(), event ->
                     event.setCancelled(true)), x, y);
+            i++;
         }
         this.gui.setOnGlobalClick(inventoryClickEvent -> inventoryClickEvent.setCancelled(true));
         this.gui.addPane(pane);
     }
 
     public void showGUI(Player p) {
-        showGUI();
-    }
-
-    public void showGUI() {
-        this.gui.show(player);
+        this.gui.show(p);
     }
 }

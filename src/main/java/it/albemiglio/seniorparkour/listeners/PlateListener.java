@@ -56,12 +56,11 @@ public class PlateListener implements Listener {
                     long time = end.getEpochSecond() - info.getStartingTime();
                     getMessage("parkour-ended")
                             .addPlaceHolder("%time", TimeUtils.formattedTime(time))
-                            .hex()
                             .send(p);
                     if(this.main.getStatsService().getStats().get(p.getUniqueId())
-                            .getOrDefault(parkour, 9999999L) > time) {
-                        getMessage("new-record").hex().send(p);
-                        this.main.getStatsService().getStats().get(p.getUniqueId()).put(parkour, time);
+                            .getOrDefault(parkour, Long.MAX_VALUE) > time) {
+                        getMessage("new-record").send(p);
+                        this.main.getStatsService().updateTime(p.getUniqueId(), parkour, time, true);
                     }
                 }
             }
@@ -76,7 +75,7 @@ public class PlateListener implements Listener {
                         this.main.getParkourService().getCurrentPlayers().put(p.getUniqueId(), info);
                         getMessage("checkpoint-reached")
                                 .addPlaceHolder("%n", info.getCheckpoint())
-                                .hex().send(p);
+                                .send(p);
                     }
                 }
             }
@@ -123,6 +122,6 @@ public class PlateListener implements Listener {
     }
 
     private Message getMessage(String path) {
-        return new Message(this.main.getFileService().getMessages().getString(path));
+        return new Message(this.main.getFileService().getMessages().getString(path)).hex();
     }
 }

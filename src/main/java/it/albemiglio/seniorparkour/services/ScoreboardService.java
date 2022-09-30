@@ -2,7 +2,6 @@ package it.albemiglio.seniorparkour.services;
 
 import it.albemiglio.seniorparkour.SeniorParkour;
 import it.albemiglio.seniorparkour.objects.CurrentParkour;
-import it.albemiglio.seniorparkour.objects.Service;
 import it.albemiglio.seniorparkour.utils.TimeUtils;
 import it.mycraft.powerlib.common.chat.Message;
 import org.bukkit.Bukkit;

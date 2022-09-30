@@ -3,7 +3,6 @@ package it.albemiglio.seniorparkour.services;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import it.albemiglio.seniorparkour.SeniorParkour;
-import it.albemiglio.seniorparkour.objects.Service;
 import lombok.Getter;
 import org.bukkit.configuration.ConfigurationSection;
 

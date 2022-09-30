@@ -4,7 +4,6 @@ import com.google.common.io.Files;
 import it.albemiglio.seniorparkour.SeniorParkour;
 import it.albemiglio.seniorparkour.objects.CurrentParkour;
 import it.albemiglio.seniorparkour.objects.Parkour;
-import it.albemiglio.seniorparkour.objects.Service;
 import it.albemiglio.seniorparkour.utils.LocUtils;
 import lombok.Getter;
 import org.bukkit.Location;
@@ -133,7 +132,7 @@ public class ParkourService extends Service {
         }
     }
 
-    protected void removeParkour(String parkour) {
+    public void removeParkour(String parkour) {
         this.parkours.remove(parkour);
         File parkourFile = new File(this.main.getDataFolder() + "/SeniorParkour/parkours", parkour+".yml");
         if(parkourFile.exists()) parkourFile.delete();

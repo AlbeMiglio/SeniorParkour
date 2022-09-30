@@ -12,6 +12,49 @@ cant-fly-during-parkour: "&cYou have been kicked from parkour because of flying!
 
 correct-usage-create: "&cCorrect usage: /parkour create <parkourName>"
 
+correct-usage-checkpoint: "&cCorrect usage: /parkour checkpoint <parkourName>"
+
+correct-usage-end: "&cCorrect usage: /parkour end <parkourName>"
+
+correct-usage-top: "&cCorrect usage: /parkour top <parkourName>"
+
+correct-usage-info: "&cCorrect usage: /parkour info <parkourName>"
+
+correct-usage-deltop: "&cCorrect usage: /parkour deltop <parkourName>"
+
+correct-usage-delete: "&cCorrect usage: /parkour delete <parkourName> [checkpoint]"
+
+correct-usage-stats: "&cCorrect usage: /parkour stats <player>"
+
+correct-usage-teleport: "&cCorrect usage: /parkour teleport <parkourName> [checkpoint]"
+
+correct-usage-settop: "&cCorrect usage: /parkour settop <parkourName>"
+
 parkour-already-exists: "&cA parkour with this name already exists!"
 
+you-are-not-in-a-parkour: "&cThere is no parkour to leave!"
+
 parkour-created: "&aParkour successfully created!"
+
+parkour-does-not-exist: "&cThis parkour does not exist!"
+
+player-not-found: "&cThis player hasn't been found in our database!"
+
+checkpoint-created: "&aCheckpoint added!"
+
+end-created: "&aEnd successfully set!"
+
+leave-success: "&aYou left the parkour!"
+
+settop-success: "&aTop hologram created!"
+
+deltop-success: "&aTop hologram removed! (Rejoin to refresh)"
+
+delete-checkpoint-success: "&aCheckpoint deleted successfully! (Rejoin to refresh)"
+
+delete-success: "&aParkour deleted successfully! (Rejoin to refresh)"
+
+teleport-success: "&aTeleported successfully!"
+
+invalid-checkpoint: "&cSpecified checkpoint isn't valid, retry!"
+
